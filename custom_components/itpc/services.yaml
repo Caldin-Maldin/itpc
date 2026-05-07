@@ -1,0 +1,44 @@
+send_values:
+  name: Передать показания
+  description: Передать показания всех счетчиков одновременно
+  fields:
+    electric_day:
+      name: Электричество день
+      description: Показание счетчика электроэнергии (день)
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 999999
+          step: 1
+          mode: box
+    electric_night:
+      name: Электричество ночь
+      description: Показание счетчика электроэнергии (ночь)
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 999999
+          step: 1
+          mode: box
+    water_cold:
+      name: Холодная вода
+      description: Показание счетчика холодной воды
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 999999
+          step: 1
+          mode: box
+    water_hot:
+      name: Горячая вода
+      description: Показание счетчика горячей воды
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 999999
+          step: 1
+          mode: box
