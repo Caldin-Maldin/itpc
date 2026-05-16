@@ -1,11 +1,11 @@
 send_values:
   name: Передать показания
-  description: Передать показания всех счетчиков одновременно
+  description: Передать показания выбранных счетчиков (можно указывать не все)
   fields:
     electric_day:
       name: Электричество день
       description: Показание счетчика электроэнергии (день)
-      required: true
+      required: false
       selector:
         number:
           min: 0
@@ -15,7 +15,7 @@ send_values:
     electric_night:
       name: Электричество ночь
       description: Показание счетчика электроэнергии (ночь)
-      required: true
+      required: false
       selector:
         number:
           min: 0
@@ -25,7 +25,7 @@ send_values:
     water_cold:
       name: Холодная вода
       description: Показание счетчика холодной воды
-      required: true
+      required: false
       selector:
         number:
           min: 0
@@ -34,8 +34,8 @@ send_values:
           mode: box
     water_hot:
       name: Горячая вода
-      description: Показание счетчика горячей воды
-      required: true
+      description: Показание счетчика горячей воды (если отсутствует, можно не указывать)
+      required: false
       selector:
         number:
           min: 0
